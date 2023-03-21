@@ -1,8 +1,11 @@
+import os
 import telebot
 
 from telebot import types
 
-bot = telebot.TeleBot("TOKEN")
+from config import TG_BOT_TOKEN
+
+bot = telebot.TeleBot(TG_BOT_TOKEN)
 
 @bot.message_handler(commands=['start'])
 def welcome(message):

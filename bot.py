@@ -132,3 +132,4 @@ def callback_inline(call):
 		print(repr(e))
 
 
+bot.infinity_polling(none_stop=True)
